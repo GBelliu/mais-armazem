@@ -1,11 +1,5 @@
 import { Button } from "../elements/Button";
-import {
-  ButtonHeader,
-  Container,
-  Content,
-  MenuItem,
-  MenuItems,
-} from "./styles";
+import { Container, Content, MenuItem, MenuItems } from "./styles";
 
 export function Header() {
   return (
