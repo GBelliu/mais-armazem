@@ -1,5 +1,3 @@
-import { ReactNode } from "react";
-
 import {
   BoxArea,
   Container,
@@ -11,11 +9,11 @@ import {
 } from "./styles";
 import { Button } from "../elements/Button";
 
-interface ServicosProps {
-  children?: ReactNode;
-}
+// interface ServicosProps {
+//   children?: ReactNode;
+// }
 
-export function Servicos({ children }: ServicosProps) {
+export function Servicos() {
   return (
     <Container>
       <Content>
