@@ -1,14 +1,11 @@
 import styled from "styled-components";
 
-interface HeroProps {
-  background: any;
-}
+// interface HeroProps {
+//   background: any;
+// }
 
-export const Container = styled.section<HeroProps>`
-  background-image: ${({ background }) =>
-    background === "default"
-      ? 'url("https://res.cloudinary.com/do3nfw5nb/image/upload/v1688652481/backgroundhero_ha2lkj.png"), linear-gradient(244deg, #012C30 0%, #01262A 18.50%, #002227 52.00%, #00272B 100%);'
-      : "linear-gradient(244deg, #012C30 0%, #01262A 18.50%, #002227 52.00%, #00272B 100%)"};
+export const Container = styled.section`
+  background-color: #0d6663;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -41,7 +38,7 @@ export const Container = styled.section<HeroProps>`
 export const Content = styled.div`
   display: flex;
   /* flex-flow: column; */
-  max-width: 964px;
+  max-width: 1394px;
   width: 100%;
   gap: 50px;
   align-items: center;
@@ -93,6 +90,9 @@ export const Content = styled.div`
     }
   }
 
+  @media (max-width: 1750px) {
+    max-width: 965px;
+  }
   @media (min-width: 768px) and (max-width: 1023px) {
     max-width: 624px;
 

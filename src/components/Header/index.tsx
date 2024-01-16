@@ -1,3 +1,4 @@
+import { Button } from "../elements/Button";
 import {
   ButtonHeader,
   Container,
@@ -12,13 +13,14 @@ export function Header() {
       <Content>
         <img src="./logo.png" alt="" />
         <MenuItems>
-          <MenuItem>aaa</MenuItem>
-          <MenuItem>aaa</MenuItem>
-          <MenuItem>aaa</MenuItem>
-          <MenuItem>aaa</MenuItem>
-          <MenuItem>aaa</MenuItem>
+          <MenuItem>Home</MenuItem>
+          <MenuItem>Sobre</MenuItem>
+          <MenuItem>Nossos números</MenuItem>
+          <MenuItem>Servicos</MenuItem>
+          <MenuItem>Diferenciais</MenuItem>
+          <MenuItem>Contato</MenuItem>
         </MenuItems>
-        <ButtonHeader>aaa</ButtonHeader>
+        <Button text={"Fale conosco"} />
       </Content>
     </Container>
   );

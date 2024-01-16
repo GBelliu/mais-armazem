@@ -15,7 +15,7 @@ export const Content = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   padding: 0;
 
   img {
@@ -40,4 +40,31 @@ export const MenuItems = styled.div`
   gap: 50px;
 `;
 export const MenuItem = styled.div``;
-export const ButtonHeader = styled.div``;
+export const ButtonHeader = styled.button`
+  width: fit-content;
+  padding: 10px 25px;
+  height: fit-content;
+  border-radius: 7px;
+  border: 1px solid #0d6663;
+  background: rgba(255, 255, 255, 1);
+  color: #0d6663;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 900;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-family: Inter;
+
+  &:active {
+    transform: scale(0.95) translateZ(0px) !important;
+    background: #0d6663;
+    color: #fff;
+  }
+
+  &:hover {
+    transform: scale(1.03) translateZ(0px);
+    background: #0d6663;
+    color: #fff;
+  }
+`;
