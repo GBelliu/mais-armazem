@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  background: #00181a;
+  background: #0a2529;
   width: 100%;
   height: fit-content;
   /* clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%); */
@@ -37,7 +37,8 @@ export const Desenvolvido = styled.div`
 export const Content = styled.div`
   max-width: 964px;
   display: flex;
-  gap: 50px;
+  justify-content: space-between;
+  gap: 100px;
   width: 100%;
 
   @media (min-width: 768px) and (max-width: 1023px) {
@@ -61,7 +62,7 @@ export const Left = styled.div`
 export const Logo = styled.div`
   display: flex;
   flex-flow: column;
-  gap: 15px;
+  gap: 35px;
   img {
     width: 100%;
     max-width: 315px;
@@ -73,27 +74,22 @@ export const Logo = styled.div`
     width: 100%;
   }
 `;
-export const Social = styled.div`
-  display: flex;
-  gap: 5px;
-`;
+// export const Social = styled.div`
+//   display: flex;
+//   gap: 5px;
+// `;
 
-export const Circle = styled.div`
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-`;
+// export const Circle = styled.div`
+//   width: 25px;
+//   height: 25px;
+//   border-radius: 50%;
+//   background: #fff;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   cursor: pointer;
+// `;
 
-export const Center = styled.div`
-  display: flex;
-  width: fit-content;
-  margin-right: 100px;
-`;
 export const Item = styled.div`
   display: flex;
   flex-flow: column;
@@ -102,16 +98,18 @@ export const Item = styled.div`
   gap: 20px;
 `;
 export const Right = styled.div`
-  width: 100%;
   display: flex;
-  flex-flow: column;
-  gap: 20px;
+
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 
   h2 {
-    color: #fff;
-  }
-
-  iframe {
-    width: 100%;
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #fefefe;
   }
 `;
