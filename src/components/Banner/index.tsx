@@ -1,16 +1,12 @@
-import { ReactNode } from 'react';
+import { Container, Content, Imagem } from "./styles";
 
-import { Container } from './styles';
-
-interface BannerProps {
-  children: ReactNode;
-}
-
-export function Banner({ children }: BannerProps) {
+export function Banner() {
   return (
     <Container>
-      <h1>Banner</h1>
-      {children}
+      <Imagem></Imagem>
+      <Content>
+        <h2>What is Lorem Ipsum</h2>
+      </Content>
     </Container>
   );
 }

@@ -1,16 +1,9 @@
-import { ReactNode } from 'react';
+import { Container } from "./styles";
 
-import { Container } from './styles';
-
-interface ContatoProps {
-  children: ReactNode;
-}
-
-export function Contato({ children }: ContatoProps) {
+export function Contato() {
   return (
-    <Container>
+    <Container id="contato">
       <h1>Contato</h1>
-      {children}
     </Container>
   );
 }

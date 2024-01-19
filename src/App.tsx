@@ -7,6 +7,9 @@ import { Servicos } from "./components/Servicos";
 import { Clientes } from "./components/Clientes";
 import { Footer } from "./components/Footer";
 import { Recurso } from "./components/Recurso";
+import { Diferenciais } from "./components/Diferenciais";
+import { Banner } from "./components/Banner";
+import { Contato } from "./components/Contato";
 
 function App() {
   return (
@@ -17,6 +20,9 @@ function App() {
       <Sobre />
       <Servicos />
       <Recurso />
+      <Diferenciais />
+      <Banner />
+      <Contato />
       <Footer />
     </main>
   );
