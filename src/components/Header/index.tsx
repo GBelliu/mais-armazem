@@ -16,7 +16,7 @@ export function Header() {
             to="contato"
             href="/"
             smooth={true}
-            duration={500}
+            duration={1000}
             offset={-100}
           >
             <MenuItem>Contato</MenuItem>

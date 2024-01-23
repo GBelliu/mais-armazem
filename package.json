@@ -10,11 +10,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.12.1",
     "lucide-react": "^0.311.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.0.1",
     "react-scroll": "^1.9.0",
+    "react-toastify": "^10.0.3",
     "styled-components": "^6.1.6",
     "swiper": "^11.0.5"
   },

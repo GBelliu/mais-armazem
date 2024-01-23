@@ -3,13 +3,14 @@ import { ReactNode } from "react";
 import { Container } from "./styles";
 
 interface ButtonProps {
-  text: String;
+  text: String | ReactNode;
   icon?: ReactNode;
+  type?: any;
 }
 
-export function Button({ text, icon }: ButtonProps) {
+export function Button({ text, icon, type }: ButtonProps) {
   return (
-    <Container>
+    <Container type={type}>
       <span>{text}</span>
       {icon}
     </Container>

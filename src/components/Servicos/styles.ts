@@ -40,7 +40,13 @@ export const ContentServicos = styled.div`
 
 export const Items = styled.div``;
 
-export const Item = styled.div``;
+interface ItemProps {
+  active: boolean;
+}
+
+export const Item = styled.div<ItemProps>`
+  border-bottom: ${({ active }) => (active ? "10px solid #400186" : "0px")};
+`;
 
 export const BoxArea = styled.div`
   width: 100%;

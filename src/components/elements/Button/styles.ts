@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const Container = styled.button`
   display: flex;
   padding: 18px 35px;
   justify-content: center;
@@ -12,6 +12,7 @@ export const Container = styled.div`
   box-shadow: 2px 4px 12px 0px rgba(149, 157, 165, 0.2);
   cursor: pointer;
   width: fit-content;
+  border: none;
   span {
     color: #eaf8fa;
     text-align: center;

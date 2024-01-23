@@ -9,7 +9,7 @@ import { Footer } from "./components/Footer";
 import { Recurso } from "./components/Recurso";
 import { Diferenciais } from "./components/Diferenciais";
 import { Banner } from "./components/Banner";
-import { Contato } from "./components/Contato";
+import Contato from "./components/Contato";
 
 function App() {
   return (
