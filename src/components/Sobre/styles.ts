@@ -37,9 +37,13 @@ export const Content = styled.div`
 export const TextContent = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 55px;
+  gap: 35px;
   max-width: 50%;
   width: 100%;
+
+  p {
+    font-size: 20px;
+  }
 `;
 
 export const VideoContent = styled.div`

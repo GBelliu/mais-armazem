@@ -26,6 +26,15 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    @media (max-width: 1750px) {
+    font-size: 40px;
+  }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    font-size: 36px;
+  }
+  @media (max-width: 767px) {
+   font-size: 32px;
+  }
   }
   
   p {
@@ -35,4 +44,18 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    @media (max-width: 1750px) {
+    font-size: 20px;
   }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    font-size: 18px;
+  }
+  @media (max-width: 767px) {
+   font-size: 16px;
+  }
+  }
+
+  
+  
+
+  

@@ -9,11 +9,22 @@ export function Sobre() {
         <TextContent>
           <h1>A Mais Armazém</h1>
           <p>
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout. The point
-            of using Lorem Ipsum is that it has a more-or-less normal
-            distribution of letters, as opposed to using 'Content here, content
-            here', making it look like readable English.
+            A <b>Mais Armazém</b> é uma empresa de armazenagem geral para
+            estocagem de mercadorias de terceiros com planta de 240.000 m²,
+            consorciada ao Centro Logístico Rio Claro (CLRC) situado no
+            município de Rio Claro (SP), numa região estratégica do Estado de
+            São Paulo próxima aos grandes centros de produção e rotas de
+            distribuição de mercadorias.
+          </p>
+          <p>
+            Nosso negócio, devidamente registrado na Jucesp, associa logística
+            eficiente, gestão de estoque, armazenamento seguro e soluções de
+            armazenagem dentro de uma estrutura física de alta qualidade, segura
+            e planejada para potencializar as atividades de armazenagem. As
+            áreas comuns têm apurado trabalho de paisagismo e os acessos são
+            monitorados 24 horas por dia. A unidade utiliza energia fotovoltaica
+            dentro das propostas de energia limpa e renovável adotada pelo Grupo
+            MNGT.
           </p>
           <Button
             text={"FALE AGORA COM UM DE NOSSOS ATENDENTES"}

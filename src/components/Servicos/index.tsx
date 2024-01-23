@@ -14,25 +14,25 @@ import { useEffect, useState } from "react";
 export function Servicos() {
   const serviceContent: any = [
     {
-      title: "Exportação e Importação",
+      title: "Fuja da bitributação",
       description:
-        "Temos a expertise que você precisa para que sua carga chegue em segurança. Temos conhecimento e know-how sobre as legislações e exclusividades de cada país ou região.",
+        "Ao desenharem nosso modelo de negócio, nossos estrategistas financeiros e tributários definiram o melhor modelo, que equilibra custos e benefícios para as empresas que optarem pela Mais Armazém, o que protege sua operação da bitributação de impostos e/ou necessidade de implantar filiais, que encarecem seus custos e reduzem sua margem de lucro. Com nosso apoio, sua empresa terá mais espaço na unidade fabril ou comercial para ampliar sua capacidade produtiva e de negócios. As mercadorias podem sair da Mais Armazém diretamente para os clientes finais, reduzindo custos de logística para o cliente.",
       button_url: "Saiba mais",
       img_url:
         "https://res.cloudinary.com/dh8jsqkcp/image/upload/v1684853880/imgservices_lbsos2.png",
     },
     {
-      title: "Auxílio em Drawback",
+      title: "Nossos números",
       description:
-        "O Drawback permite a suspensão ou eliminação de tributos incidentes na aquisição de insumos empregados na industrialização de produtos exportáveis tornando-os mais competitivos no cenário internacional.",
+        "Nossa planta ampla reúne uma enorme capacidade de armazenamento, galpões em diferentes tamanhos e grande capacidade de estocagem. Área total: 240.000 m² Área construída: 83.000 m² Área de novos projetos: 30.000 m² (já aprovados) Built-to-suit (construção sob medida): 80.000 m²",
       button_url: "",
       img_url:
         "https://res.cloudinary.com/dh8jsqkcp/image/upload/v1684853879/drawback_mauzi3.jpg",
     },
     {
-      title: "Exclusive EUA",
+      title: "Olhos no futuro do planeta",
       description:
-        "Agilidade e otimização de preços para frete interno. Mesmo que não haja residência no local você terá o melhor custo-benefício do mercado. Garantimos todo trâmite necessário.",
+        "A Mais Armazém e o CLRC geram e utilizam energia limpa e renovável de matriz fotovoltaica, ou seja, captam e transformam energia solar em energia elétrica para atender todas suas demandas internas, gerando um impacto positivo na qualidade de vida do planeta.  Essa sustentável voltada para a qualidade de vida e proteção do planeta é parte integrante do planejamento estratégico do negócio e está alinhada aos ODS (Objetivos de Desenvolvimento Sustentável) definidos pela ONU (Organização das Nações Unidas) para garantir as gerações futuras. ",
       button_url: "",
       img_url:
         "https://res.cloudinary.com/dh8jsqkcp/image/upload/v1684853880/frete_zzbxoy.jpg",
@@ -44,7 +44,7 @@ export function Servicos() {
     btn3: false,
   });
 
-  const [serviceInformations, setServiceInformations] = useState();
+  const [serviceInformations, setServiceInformations] = useState<any>();
 
   useEffect(() => {
     if (actives.btn1 === true) {
@@ -60,7 +60,7 @@ export function Servicos() {
   return (
     <Container>
       <Content>
-        <h1>Nossos serviços</h1>
+        <h1>Temos o menor custo do mercado!</h1>
         <ContentServicos>
           <Items>
             <button
@@ -72,7 +72,7 @@ export function Servicos() {
                 })
               }
             >
-              <Item active={actives["btn1"]}>Importação e exportação</Item>
+              <Item active={actives["btn1"]}>{serviceContent[0]?.title}</Item>
             </button>
             <button
               onClick={() =>
@@ -83,7 +83,7 @@ export function Servicos() {
                 })
               }
             >
-              <Item active={actives["btn2"]}>Drawback</Item>
+              <Item active={actives["btn2"]}>{serviceContent[1]?.title}</Item>
             </button>
             <button
               onClick={() =>
@@ -94,21 +94,14 @@ export function Servicos() {
                 })
               }
             >
-              <Item active={actives["btn3"]}>Frete EUA</Item>
+              <Item active={actives["btn3"]}>{serviceContent[2]?.title}</Item>
             </button>
           </Items>
           <BoxArea>
             <Rectangle />
             <TextBox>
-              <h2>Lorem Ipsum</h2>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged.
-              </p>
+              <h2>{serviceInformations?.title}</h2>
+              <p>{serviceInformations?.description}</p>
               <Button text={"SAIBA MAIS"} />
             </TextBox>
           </BoxArea>

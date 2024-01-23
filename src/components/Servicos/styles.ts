@@ -38,14 +38,31 @@ export const ContentServicos = styled.div`
   height: fit-content;
 `;
 
-export const Items = styled.div``;
+export const Items = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+`;
 
 interface ItemProps {
   active: boolean;
 }
 
 export const Item = styled.div<ItemProps>`
-  border-bottom: ${({ active }) => (active ? "10px solid #400186" : "0px")};
+  border-bottom: ${({ active }) => (active ? "6px solid #0D6663" : "0px")};
+  color: #041c1b;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 `;
 
 export const BoxArea = styled.div`
@@ -82,5 +99,9 @@ export const TextBox = styled.div`
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+  }
+
+  p {
+    font-size: 20px;
   }
 `;

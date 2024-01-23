@@ -9,9 +9,9 @@ export function Header() {
         <MenuItems>
           <MenuItem>Home</MenuItem>
           <MenuItem>Sobre</MenuItem>
-          <MenuItem>Nossos números</MenuItem>
           <MenuItem>Servicos</MenuItem>
           <MenuItem>Diferenciais</MenuItem>
+          <MenuItem>Notícias</MenuItem>
           <Link
             to="contato"
             href="/"
