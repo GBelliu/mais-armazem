@@ -35,7 +35,7 @@ export const Content = styled.div`
 
   @media (max-width: 767px) {
     max-width: 350px;
-
+    flex-flow: column;
     h1 {
       text-align: center;
     }
@@ -65,6 +65,7 @@ export const TextContent = styled.div`
 
   @media (max-width: 767px) {
     gap: 15px;
+    max-width: 100%;
   }
 `;
 

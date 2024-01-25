@@ -26,10 +26,14 @@ export const Desenvolvido = styled.div`
   h3 {
     font-size: 20px;
     color: #fff;
-    a {
-      font-size: 22px;
-      cursor: pointer;
-      color: #fff;
+  }
+  a {
+    font-size: 22px;
+    cursor: pointer;
+    color: #fff;
+
+    img {
+      width: 150px;
     }
   }
 `;

@@ -38,13 +38,13 @@ export function Footer() {
         </Right>
       </Content>
       <Desenvolvido>
-        <h3>
-          Desenvolvido por{" "}
-          <a href="https://grupomngt.com.br/" target="_blank">
-            Grupo MNGT (colocar a logo)
-          </a>
-          .
-        </h3>
+        <h3>Desenvolvido por </h3>
+        <a href="https://grupomngt.com.br/" target="_blank">
+          <img
+            src="https://static.wixstatic.com/media/c34986_ef9c3d76a86147d394728f3cba27d4d8~mv2.png/v1/fill/w_660,h_193,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/GrupoMNGT_-_Logo_Oficial_-_Branco-removebg-preview.png"
+            alt="Logo - Grupo MNGT"
+          />
+        </a>
       </Desenvolvido>
     </Container>
   );

@@ -5,7 +5,6 @@ export const Container = styled.div`
   display: flex;
   background: #fff;
   height: fit-content;
-
   box-shadow: 0px 8px 24px 0px rgba(149, 157, 165, 0.2);
   width: 100vw;
   .swiper {
