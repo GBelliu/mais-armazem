@@ -1,4 +1,4 @@
-import { Container } from "./styles";
+import { Container, ContentSlide } from "./styles";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -12,9 +12,10 @@ export function Clientes() {
       <Swiper
         slidesPerView={"auto"}
         spaceBetween={120}
+        speed={3000}
         loop={true}
         autoplay={{
-          delay: 500,
+          delay: 1,
           disableOnInteraction: false,
         }}
         modules={[Autoplay]}
@@ -29,46 +30,94 @@ export function Clientes() {
         }}
       >
         <SwiperSlide>
-          <img src="./logo.png" alt="" />
+          <ContentSlide>
+            <img src="./logo.png" alt="" />
+          </ContentSlide>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="./logo.png" alt="" />
+          <ContentSlide>
+            <img src="./logo.png" alt="" />
+          </ContentSlide>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="./logo.png" alt="" />
+          <ContentSlide>
+            <img src="./logo.png" alt="" />
+          </ContentSlide>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="./logo.png" alt="" />
+          <ContentSlide>
+            <img src="./logo.png" alt="" />
+          </ContentSlide>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="./logo.png" alt="" />
+          <ContentSlide>
+            <img src="./logo.png" alt="" />
+          </ContentSlide>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="./logo.png" alt="" />
+          <ContentSlide>
+            <img src="./logo.png" alt="" />
+          </ContentSlide>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="./logo.png" alt="" />
+          <ContentSlide>
+            <img src="./logo.png" alt="" />
+          </ContentSlide>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="./logo.png" alt="" />
+          <ContentSlide>
+            <img src="./logo.png" alt="" />
+          </ContentSlide>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="./logo.png" alt="" />
+          <ContentSlide>
+            <img src="./logo.png" alt="" />
+          </ContentSlide>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="./logo.png" alt="" />
+          <ContentSlide>
+            <img src="./logo.png" alt="" />
+          </ContentSlide>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="./logo.png" alt="" />
+          <ContentSlide>
+            <img src="./logo.png" alt="" />
+          </ContentSlide>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="./logo.png" alt="" />
+          <ContentSlide>
+            <img src="./logo.png" alt="" />
+          </ContentSlide>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="./logo.png" alt="" />
+          <ContentSlide>
+            <img src="./logo.png" alt="" />
+          </ContentSlide>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="./logo.png" alt="" />
+          <ContentSlide>
+            <img src="./logo.png" alt="" />
+          </ContentSlide>
+        </SwiperSlide>
+        <SwiperSlide>
+          <ContentSlide>
+            <img src="./logo.png" alt="" />
+          </ContentSlide>
+        </SwiperSlide>
+        <SwiperSlide>
+          <ContentSlide>
+            <img src="./logo.png" alt="" />
+          </ContentSlide>
+        </SwiperSlide>
+        <SwiperSlide>
+          <ContentSlide>
+            <img src="./logo.png" alt="" />
+          </ContentSlide>
+        </SwiperSlide>
+        <SwiperSlide>
+          <ContentSlide>
+            <img src="./logo.png" alt="" />
+          </ContentSlide>
         </SwiperSlide>
       </Swiper>
     </Container>

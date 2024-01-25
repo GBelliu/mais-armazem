@@ -2,17 +2,50 @@ import { Button } from "../elements/Button";
 import { slide as Menu } from "react-burger-menu";
 import { Container, Content, MenuItem, MenuItems } from "./styles";
 import { Link } from "react-scroll";
+import { useState } from "react";
 export function Header() {
+  const [isOpenMenu, setIsOpenMenu] = useState(false);
   return (
     <Container>
       <Content>
-        <img src="./logo.png" alt="" />
+        <a href="/">
+          <img src="./logo.png" alt="" />
+        </a>
         <MenuItems>
-          <MenuItem>Home</MenuItem>
-          <MenuItem>Sobre</MenuItem>
-          <MenuItem>Servicos</MenuItem>
-          <MenuItem>Diferenciais</MenuItem>
-          <MenuItem>MA na Mídia</MenuItem>
+          <a href="/">
+            <MenuItem>Home</MenuItem>
+          </a>
+          <Link
+            to="contato"
+            href="/"
+            smooth={true}
+            duration={1000}
+            offset={-100}
+          >
+            <MenuItem>Sobre</MenuItem>
+          </Link>
+          <Link
+            to="contato"
+            href="/"
+            smooth={true}
+            duration={1000}
+            offset={-100}
+          >
+            <MenuItem>Servicos</MenuItem>
+          </Link>
+          <Link
+            to="contato"
+            href="/"
+            smooth={true}
+            duration={1000}
+            offset={-100}
+          >
+            <MenuItem>Diferenciais</MenuItem>
+          </Link>
+          <a href="/midia">
+            <MenuItem>Mídia</MenuItem>
+          </a>
+
           <Link
             to="contato"
             href="/"
@@ -23,7 +56,29 @@ export function Header() {
             <MenuItem>Contato</MenuItem>
           </Link>
         </MenuItems>
-        <Button text={"Fale conosco"} />
+        <Link to="contato" href="/" smooth={true} duration={1000} offset={-100}>
+          <Button visible={false} text={"Fale conosco"} />
+        </Link>
+        <Menu
+          right
+          className="menuBox"
+          isOpen={isOpenMenu}
+          onOpen={() => setIsOpenMenu(true)}
+          onClose={() => setIsOpenMenu(false)}
+        >
+          <Link to="form" href="/" smooth={true} duration={500} offset={-100}>
+            Home
+          </Link>
+          <Link to="form" href="/" smooth={true} duration={500} offset={-100}>
+            Sobre
+          </Link>
+          <Link to="form" href="/" smooth={true} duration={500} offset={-100}>
+            Produtos
+          </Link>
+          <Link to="form" href="/" smooth={true} duration={500} offset={-100}>
+            Contato
+          </Link>
+        </Menu>
       </Content>
     </Container>
   );

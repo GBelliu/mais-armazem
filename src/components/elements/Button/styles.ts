@@ -1,8 +1,12 @@
 import styled from "styled-components";
 
-export const Container = styled.button`
+interface ButtonProps {
+  visible?: boolean;
+}
+
+export const Container = styled.button<ButtonProps>`
   display: flex;
-  padding: 18px 35px;
+  padding: 15px 30px;
   justify-content: center;
   align-items: center;
   height: fit-content;
@@ -21,5 +25,10 @@ export const Container = styled.button`
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    white-space: nowrap;
+  }
+
+  @media (max-width: 1023px) {
+    display: ${({ visible }) => (visible ? "flex" : "none")};
   }
 `;

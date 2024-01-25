@@ -3,12 +3,16 @@ import styled from "styled-components";
 export const Container = styled.div`
   color: #000;
   display: flex;
+  background: #fff;
+  height: fit-content;
 
+  box-shadow: 0px 8px 24px 0px rgba(149, 157, 165, 0.2);
   width: 100vw;
   .swiper {
     width: 100%;
     /* box-sizing: border-box; */
     position: relative;
+    padding: 40px 0px;
   }
 
   .swiper-wrapper {
@@ -17,6 +21,7 @@ export const Container = styled.div`
     /* margin-left: -80px; */
     /* display: flex; */
     /* justify-content: center; */
+    transition-timing-function: linear;
   }
 
   .swiper-button-next,
@@ -67,4 +72,15 @@ export const Container = styled.div`
       width: 100px;
     }
   }
+`;
+
+export const ContentSlide = styled.div`
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 2px 4px 12px 0px rgba(149, 157, 165, 0.2);
 `;

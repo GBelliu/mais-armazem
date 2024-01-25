@@ -6,11 +6,12 @@ interface ButtonProps {
   text: String | ReactNode;
   icon?: ReactNode;
   type?: any;
+  visible?: boolean;
 }
 
-export function Button({ text, icon, type }: ButtonProps) {
+export function Button({ text, icon, type, visible }: ButtonProps) {
   return (
-    <Container type={type}>
+    <Container type={type} visible={visible}>
       <span>{text}</span>
       {icon}
     </Container>
