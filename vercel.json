@@ -1,0 +1,5 @@
+{
+  "rewrites":  [
+    {"source": "/midia", "destination": "/midia"}
+  ]
+}
