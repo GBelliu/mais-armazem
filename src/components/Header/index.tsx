@@ -1,4 +1,5 @@
 import { Button } from "../elements/Button";
+import { slide as Menu } from "react-burger-menu";
 import { Container, Content, MenuItem, MenuItems } from "./styles";
 import { Link } from "react-scroll";
 export function Header() {
@@ -11,7 +12,7 @@ export function Header() {
           <MenuItem>Sobre</MenuItem>
           <MenuItem>Servicos</MenuItem>
           <MenuItem>Diferenciais</MenuItem>
-          <MenuItem>Notícias</MenuItem>
+          <MenuItem>MA na Mídia</MenuItem>
           <Link
             to="contato"
             href="/"

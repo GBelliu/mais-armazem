@@ -46,6 +46,30 @@ export function Clientes() {
         <SwiperSlide>
           <img src="./logo.png" alt="" />
         </SwiperSlide>
+        <SwiperSlide>
+          <img src="./logo.png" alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="./logo.png" alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="./logo.png" alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="./logo.png" alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="./logo.png" alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="./logo.png" alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="./logo.png" alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="./logo.png" alt="" />
+        </SwiperSlide>
       </Swiper>
     </Container>
   );

@@ -11,17 +11,22 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.12.1",
+    "@prismicio/client": "^7.3.1",
+    "@prismicio/react": "^2.7.3",
     "lucide-react": "^0.311.0",
     "react": "^18.2.0",
+    "react-burger-menu": "^3.0.9",
     "react-dom": "^18.2.0",
     "react-icons": "^5.0.1",
+    "react-router-dom": "^6.21.3",
     "react-scroll": "^1.9.0",
-    "react-toastify": "^10.0.3",
+    "react-toastify": "^10.0.4",
     "styled-components": "^6.1.6",
     "swiper": "^11.0.5"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",
+    "@types/react-burger-menu": "^2.8.7",
     "@types/react-dom": "^18.2.17",
     "@types/react-scroll": "^1.8.10",
     "@typescript-eslint/eslint-plugin": "^6.14.0",

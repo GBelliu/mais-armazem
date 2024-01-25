@@ -26,10 +26,10 @@ export const Content = styled.div`
     gap: 50px;
   }
   @media (min-width: 768px) and (max-width: 1023px) {
-    max-width: 100%;
+    max-width: 624px;
   }
   @media (max-width: 767px) {
-    max-width: 100%;
+    max-width: 350px;
     align-items: center;
   }
 `;
@@ -59,14 +59,46 @@ export const ItemList = styled.div`
   svg {
     min-width: fit-content;
   }
+
+  @media (max-width: 1750px) {
+  }
+  @media (min-width: 768px) and (max-width: 1023px) {
+  }
+
+  @media (max-width: 767px) {
+    align-items: center;
+  }
 `;
-export const ContentItem = styled.div``;
+
+export const ContentItem = styled.div`
+  @media (max-width: 1750px) {
+  }
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+  }
+
+  @media (max-width: 767px) {
+    h2 {
+      font-size: 18px;
+    }
+  }
+`;
+
 export const RightContent = styled.div`
   width: 100%;
   max-width: 567px;
   height: 564px;
   border-radius: 10px 25px;
   background: #616161;
+
+  @media (max-width: 1750px) {
+  }
+  @media (min-width: 768px) and (max-width: 1023px) {
+  }
+
+  @media (max-width: 767px) {
+    display: none;
+  }
 `;
 export const Cards = styled.div`
   width: 100%;
@@ -74,6 +106,22 @@ export const Cards = styled.div`
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 125px;
   grid-row-gap: 50px;
+
+  @media (max-width: 1750px) {
+    grid-row-gap: 30px;
+    grid-column-gap: 50px;
+  }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 50px;
+  }
+
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+    grid-row-gap: 30px;
+    grid-column-gap: 50px;
+  }
 `;
 export const Card = styled.div`
   display: flex;
@@ -96,5 +144,25 @@ export const Card = styled.div`
   }
   svg {
     min-width: fit-content;
+  }
+
+  @media (max-width: 1750px) {
+    padding: 35px 20px;
+    span {
+      font-size: 18px;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    padding: 25px 15px;
+    span {
+      font-size: 18px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    padding: 25px 15px;
+    span {
+      font-size: 18px;
+    }
   }
 `;

@@ -20,9 +20,17 @@ export const Content = styled.div`
 
   @media (max-width: 1750px) {
     max-width: 965px;
+    h1 {
+      font-size: 36px;
+    }
   }
   @media (min-width: 768px) and (max-width: 1023px) {
     max-width: 624px;
+    flex-flow: column;
+    flex-flow: column-reverse;
+    h1 {
+      font-size: 32px;
+    }
   }
 
   @media (max-width: 767px) {
@@ -40,6 +48,19 @@ export const TextContent = styled.div`
   gap: 55px;
   max-width: 50%;
   width: 100%;
+
+  @media (max-width: 1750px) {
+    gap: 30px;
+  }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    gap: 20px;
+    max-width: 100%;
+    align-items: center;
+  }
+
+  @media (max-width: 767px) {
+    gap: 15px;
+  }
 `;
 
 export const VideoContent = styled.div`
