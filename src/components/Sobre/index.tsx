@@ -4,7 +4,7 @@ import { ChevronRight } from "lucide-react";
 
 export function Sobre() {
   return (
-    <Container>
+    <Container id="sobre">
       <Content>
         <TextContent>
           <h1>A Mais Armazém</h1>

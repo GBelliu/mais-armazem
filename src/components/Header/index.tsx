@@ -15,17 +15,11 @@ export function Header() {
           <a href="/">
             <MenuItem>Home</MenuItem>
           </a>
-          <Link
-            to="contato"
-            href="/"
-            smooth={true}
-            duration={1000}
-            offset={-100}
-          >
+          <Link to="sobre" href="/" smooth={true} duration={1000} offset={-100}>
             <MenuItem>Sobre</MenuItem>
           </Link>
           <Link
-            to="contato"
+            to="servicos"
             href="/"
             smooth={true}
             duration={1000}
@@ -34,11 +28,11 @@ export function Header() {
             <MenuItem>Servicos</MenuItem>
           </Link>
           <Link
-            to="contato"
+            to="diferenciais"
             href="/"
             smooth={true}
             duration={1000}
-            offset={-100}
+            offset={0}
           >
             <MenuItem>Diferenciais</MenuItem>
           </Link>

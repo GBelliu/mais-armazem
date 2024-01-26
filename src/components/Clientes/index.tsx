@@ -8,7 +8,7 @@ import "swiper/css";
 import { Autoplay } from "swiper/modules";
 export function Clientes() {
   return (
-    <Container>
+    <Container id="clientes">
       <Swiper
         slidesPerView={"auto"}
         spaceBetween={120}

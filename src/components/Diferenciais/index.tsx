@@ -13,7 +13,7 @@ import {
 
 export function Diferenciais() {
   return (
-    <Container>
+    <Container id="diferenciais">
       <Content>
         <h1>Diferenciais</h1>
         <GridContent>
